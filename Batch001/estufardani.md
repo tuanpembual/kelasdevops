@@ -10,3 +10,5 @@ nama: estu fardani
 * pelajari perintah:
 git clone,git pull, git add nama_file, git commit -m "isi commit", git push origin master
 
+* pelajari tentang git branch
+
