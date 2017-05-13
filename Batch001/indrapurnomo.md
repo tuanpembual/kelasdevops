@@ -26,8 +26,10 @@ buat public key selesai
  ## Cara Pertama  
 kita buat dulu kunci public (id_rsa)  
 *client* indra@192.168.1.94
+
 ssh-keygen -t rsa proses tersebut akan menghasilkan file public key yg terletak di folder home .ssh/id_rsa.pub
  kemudian kita copy key tersebut ke server dengan perintah ssh-copy-id indra@192.168.1.212 jika sudah tersalin kita ketik ssh indra@192.168.1.212
+ 
 *server* indra@192.168.1.212 
 
  ## Cara kedua 
