@@ -7,7 +7,8 @@ soal : jelaskan devops menurut anda?
 `DevOps` kolaborasi antara tim developer dengan tim operational dalam membangun sebuah software sehingga dalam membuat atau mengembangkan software bisa lebih efektif
  
 
-feedback materi 1 : sdh cukup jelas feedback materi 2 : 👍
+feedback materi 1 : sdh cukup jelas  
+feedback materi 2 : 👍
 
     Install git sudah
 
@@ -22,6 +23,7 @@ buat public key selesai
 * Tugas 
 
 # Cara Mengamankan SSH tanpa Password
+  * sebelumya pastikan kita sudah menginstall ssh server apt-get -y install ssh open sshserver dan editornya menggunakan vim apt-get -y install vim
 
  ## Cara Pertama  
 kita buat dulu kunci public (id_rsa)  
