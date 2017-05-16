@@ -36,3 +36,10 @@ ssh-keygen -t rsa proses tersebut akan menghasilkan file public key yg terletak 
 
  ## Cara kedua 
 setelah buat public key kita masuk root untuk install vim , kemudian copy public key dengan cara vim.ssh/authorized_keys paste di situ kemudian save tkn esc terus :wq! kmdian kita cb login ke server, alamat dan user sama dengan yang diatas.
+ 
+# Cara Install XAMPP di Linux DEbian
+* Pertama kita download dahulu xampp for linux dari web atau bisa juga lewat terminal dengan perintah *wget linkdownload xampp*
+* Setelah selesai, biasanya file berada di direktori Downloads
+* Buka terminal masuk ke root ketikkan cd Downloads, karena saya pakai yang versi bahasa indonesia ketik cd Unduhan
+* Kemudian ketikan ls -l untuk melihat file dan hak akses file tersebut, kalau tidak ada ijin eksekusi kita tambahkan +x untuk lebih jelasnya seperti ini : *chmod +x xampp-linux-x64-5.6.30-1-installer.run* tergantung versi linux yg dipakai.
+* untuk menginstall tinggal kita tambahkan ./ *./xampp-linux-x64-5.6.30-1-installer.run* maka akan muncul panel intalasi xampp kita cukup ketik next / install seperti menginstall software pada umumnya.
