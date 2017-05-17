@@ -43,3 +43,21 @@ setelah buat public key kita masuk root untuk install vim , kemudian copy public
 * Buka terminal masuk ke root ketikkan cd Downloads, karena saya pakai yang versi bahasa indonesia ketik cd Unduhan
 * Kemudian ketikan ls -l untuk melihat file dan hak akses file tersebut, kalau tidak ada ijin eksekusi kita tambahkan +x untuk lebih jelasnya seperti ini : *chmod +x xampp-linux-x64-5.6.30-1-installer.run* tergantung versi linux yg dipakai.
 * untuk menginstall tinggal kita tambahkan ./ *./xampp-linux-x64-5.6.30-1-installer.run* maka akan muncul panel intalasi xampp kita cukup ketik next / install seperti menginstall software pada umumnya.
+
+
+## Buat folder cek keberadaan file dan rename folder jika terdapat file yang dimaksud
+#!/bin/bash  
+
+#Buat folder,cek keberadaan teks plus rename folder
+
+if [ -f ayaka.txt ];
+
+then
+
+        #mkdir -p /home/indra/devops2
+        echo "ada"
+else
+
+        #mkdir -p /home/indra/devops
+        echo "tidak ada"
+fi
