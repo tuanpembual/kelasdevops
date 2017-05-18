@@ -12,3 +12,14 @@ git clone,git pull, git add nama_file, git commit -m "isi commit", git push orig
 
 * pelajari tentang git branch
 
+==================================
+Peer 20170511
+* Tulislah cara mengamankan ssh tanpa password  
+Uraikan dalam bahasa kalian.
+
+* Bacalah teori tentang change owner dan change mode  
+$ chown & chmod  
+Perintah ini buat apa?
+
+* Ikut kelas git  
+https://kelaskita.com/kelaskita/kelas/git-interaktif/
