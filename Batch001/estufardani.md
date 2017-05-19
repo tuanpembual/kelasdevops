@@ -23,3 +23,22 @@ Perintah ini buat apa?
 
 * Ikut kelas git  
 https://kelaskita.com/kelaskita/kelas/git-interaktif/
+
+---------------------------------
+
+buat sebuah vagrant file dengan pengaturan  
+- nama mesin: bacth001
+- os mesin: debian/jessie64
+- ram: 1gb
+- core: 1
+- newtwork: private 192.168.2.XX
+- port forwarding untuk nginx ke 10080
+- install paket berikut via vagrant provosion
+* nginx
+* mariadb | install, createuser, create db,
+* halaman index html dari kirana.blankon.id
+
+kirim pr ke github
+
+testing  
+$ curl localhost:10080
