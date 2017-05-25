@@ -6,6 +6,14 @@ konsep Devops yaitu terjalinnya komunikasi dan kalaborasi antara developer dan o
 -tulis feedback dari materi 1 dan 2?
 materi 1 : penjelasan sudah cukup jelas, materi ppt bisa diberikan saja
 materi 2 : penjelasan sudah cukup jelas, materi ppt bisa diberikan saja
+materi 3 : penjelasan sudah cukup jelas
+materi 4 : penjelasan sudah jelas dan mudah dipahami
+materi 5 : -
+materi 6 : penjelasan cukup jelas dan agak kecepetan, contoh yang diberikan sederhana dan mudah dipahami
+materi 7 : -
+materi 8 : -
+materi 9 : penjelasan sudah jelas
+materi 10 : mereview semua materi sudah jelas
 
 -tulislah cara mengamankan ssh tanpa password
  Uraikan dalam bahasa kalian.
