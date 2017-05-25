@@ -12,4 +12,27 @@ Review pert 2 :
 
     Pertemuan kedua menarik,penjelasannya kurang di perjelas lagi
 
+Review pert 3 :
+    
+    Sangat menarikk alhamdulilah
+
+Review pert 4 :
+
+    Materinya menarikk
+
+Review pert 5 :
+
+    Alhamdulilah mudah dipahami
+
+Review pert 6 :
+
+    Baik,tapi alangkah baiknya bila share materi di presentasinya hehehe
+
+Review pert 7 :
+    
+    -
+
+Review pert 8 :
+
+    -
 
