@@ -1,0 +1,49 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "debian/jessie64"
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "1024"
+    vb.cpus = "1"
+    #vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  end
+
+  config.vm.define :bacth001 do |bacth001|
+    bacth001.vm.host_name="bacth001"
+    bacth001.vm.network "private_network", ip: "192.168.33.20"
+    bacth001.vm.network "forwarded_port", guest: 80, host: 8001
+    bacth001.vm.provision "shell", inline: <<-SHELL
+        sudo apt install -y nginx curl vim
+        sudo rm -rf /var/www/index.nginx-debian.html
+        sudo cp -r /vagrant/index.html /var/www/html/.
+        sudo cp -r /vagrant/kirana.jpg /var/www/html/.
+      	sudo service nginx restart
+      	
+    		sudo DEBIAN_FRONTEND=noninteractive apt-get install mariadb-server -y
+    		sudo /usr/bin/mysqladmin -u root password 'password'
+    		mysql -u root -ppassword -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+    		mysql -u root -ppassword -e "CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost'; FLUSH PRIVILEGES;"
+    		mysql -u root -ppassword -e "CREATE DATABASE bacth001; GRANT ALL on bacth001.* to 'newuser'@'localhost' IDENTIFIED BY 'password';"
+      SHELL
+  end
+
+  config.vm.define :bacth002 do |bacth002|
+    bacth002.vm.host_name="bacth001"
+    bacth002.vm.network "private_network", ip: "192.168.33.20"
+    bacth002.vm.network "forwarded_port", guest: 80, host: 8001
+    bacth002.vm.provision "shell", inline: <<-SHELL
+        sudo apt install -y nginx curl vim
+        sudo rm -rf /var/www/index.nginx-debian.html
+        sudo cp -r /vagrant/index.html /var/www/html/.
+        sudo cp -r /vagrant/kirana.jpg /var/www/html/.
+        sudo service nginx restart
+        
+        sudo DEBIAN_FRONTEND=noninteractive apt-get install mariadb-server -y
+        sudo /usr/bin/mysqladmin -u root password 'password'
+        mysql -u root -ppassword -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+        mysql -u root -ppassword -e "CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost'; FLUSH PRIVILEGES;"
+        mysql -u root -ppassword -e "CREATE DATABASE bacth001; GRANT ALL on bacth001.* to 'newuser'@'localhost' IDENTIFIED BY 'password';"
+    SHELL
+  end
+end

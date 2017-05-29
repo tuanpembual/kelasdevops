@@ -1,6 +1,5 @@
 nama: estu fardani
 - tulislah konsep devops yg sudah kamu pelajari?
-
 - Tulis feedback dari materi 1 dan 2?
 
 - beljar git
@@ -42,3 +41,15 @@ kirim pr ke github
 
 testing  
 $ curl localhost:10080
+
+---------------------------------
+
+Hasil tugas:  
+* https://github.com/indrapurnomo/Ujian-Devops | indra | 50
+* https://github.com/ervinismu/devops-pretest | ervan | 50
+* https://github.com/Riskaas/ujian-devops- | riska | 45
+* https://github.com/widarsono/niki-ujian/blob/master/setup.sh | widarsono | 60
+
+Hasil review:  
+* Kurang baca readme
+* .gitignore

@@ -1,9 +1,6 @@
 Nama : Riska Widarsono
 soal : pengertian devops menurut anda 
 
-
-
-
 cara mengintall xampp versi 7.1.4 .0 di ubuntu 16.04 
 1. Download installer xampp pergi ke http://www.apachefriends.org/
 2. Buka terminal dengan mengunakan (ctrl + alt + T)
