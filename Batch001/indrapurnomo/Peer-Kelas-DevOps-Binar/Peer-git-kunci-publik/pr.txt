@@ -1,0 +1,36 @@
+# Kelas DevOps
+
+ * nama : indra purnomo
+
+soal : jelaskan devops menurut anda?  
+`DevOps` kolaborasi antara tim developer dengan tim operational dalam membangun sebuah software sehingga dalam membuat atau mengembangkan software bisa lebih efektif
+ 
+
+feedback materi 1 : sdh cukup jelas/ cm butuh buku panduan sih  
+feedback materi 2 : sdh cukup jelas
+feedback materi 3 : sdh jelas  
+feedback materi 4 : sdh jelas
+feedback materi 5 : sdh jelas  
+feedback materi 6 : sdh jelas
+feedback materi 7 : sdh cukup jelas  
+feedback materi 8 : sdh jelas
+feedback materi 9 : sdh jelas  
+feedback materi 10: sdh jelas
+feedback materi 11: melengkapi peer  
+feedback materi 12: tugas / Ujian
+
+
+    Install git sudah
+apt-get install git
+
+    Buat public key 
+ssh-keygen -t rsa    
+
+    Config Git
+git config --global user.name "indra"
+git config --global user.email "indra.pazz@gmail.com"
+    Melihat list config
+indra@indra:~$ git config --list
+user.name=indra 
+user.email=indra.pazz@gmail.com
+

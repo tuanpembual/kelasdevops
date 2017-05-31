@@ -1,0 +1,21 @@
+Karena vagrant menggunakan virtual machine, maka kita akan install virtual machinenya dulu. Untuk saat ini saya akan menggunakan VirtualBox
+'sudo apt-get install virtualbox'
+Setelah setup sukses, lalu kita install Vagrant
+'sudo apt-get install vagrant'
+Cek versi vagrant
+'vagrant -v'
+Kemudian kita install vagrant box, disini saya menggunakan os linux debian
+Memasang Vagrant Box
+Ketikan perintah berikut:
+
+$ vagrant box add debian/jessie64;
+install box debian jessie
+
+Buat dulu sebuah folder untuk keperluan vagrant dan masuk ke folder tersebut
+
+$ mkdir vagrant
+$ cd vagrant
+$ vagrant init 
+
+Dengan perintah tersebut kita secara tidak langsung membuat berkas dengan nama Vagrantfile
+
